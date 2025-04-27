@@ -14,6 +14,8 @@ spec:
       labels:
         app: playground
     spec:
+      imagePullSecrets:
+        - name: regcred
       containers:
         - name: playground
           image: wil42/playground:v1
